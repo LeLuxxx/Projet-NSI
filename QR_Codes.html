@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Codes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="menuItems">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Carte_Mentale.html">Carte Mentale</a></li>
+            <li><a href="QR_Codes.html">QR Codes</a></li>
+            <li><a href="Pixel_Art_Aleatoire.html">Pixel Art Aleatoire</a></li>
+            <li><a href="Creations.html">Creations</a></li>
+        </ul>
+    </nav>
+
+    <h1>QR Codes</h1>
+
+    <!-- Explication du programme -->
+    <p class="description">
+        En utilisant la librairie blockgrid, nous avons créé un algorithme qui affiche le QR code du prénom d’une personne : tout d’abord, on crée une liste vide qui s’appelle ’mat’ et un dictionnaire qui associe à chaque lettre de l’alphabet un entier donné. Ensuite pour chaque lettre on calcule la valeur associée en binaire sous forme de liste et on ajoute le résultat à la liste ‘mat’. Après on parcourt les indices de la matrice obtenue ‘mat’ et on affecte la couleur blanche si l’élément vaut 1 et la couleur noire si l’élément vaut 0, le résultat obtenu sera le ‘squelette’ de notre QR code. Enfin, on appelle la fonction dessiner et on lui donne en argument ‘mat’ afin d’afficher le QR code du prénom correspondant.
+    </p>
+    <pre><code>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="QR codes/QR code Laurence.jpg" alt="QR Code 1">
+            <p>Laurence</p>
+        </div>
+        <div class="image-container">
+            <img src="QR codes/QR codes Youssef.jpg" alt="QR Code 2">
+            <p>Youssef</p>
+        </div>
+        <div class="image-container">
+            <img src="QR codes/QR codes Mariana.jpg" alt="QR Code 3">
+            <p>Mariana</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Projet NSI</p>
+    </footer>
+</body>
+</html>
